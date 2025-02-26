@@ -18,10 +18,11 @@ public class ArrayText  extends JFrame implements ActionListener{
         button = new JButton("SUBMIT");
         button.addActionListener(this);
         button.setFocusable(false);
+        button.setBounds(50,430,145,50);
 
-        panel = new JPanel();
-        panel.setLayout(new FlowLayout());
-       panel.setBounds(0, 100, 420, 420);;
+       // panel = new JPanel();
+        //panel.setLayout(new FlowLayout());
+       //panel.setBounds(0, 100, 420, 420);;
         
        
 
@@ -33,9 +34,9 @@ public class ArrayText  extends JFrame implements ActionListener{
         textField.setCaretColor(Color.white);
         textField.setFont(new Font("Consolas", Font.BOLD,25));
 
-        panel.add(textField);
-        panel.add(button);
-        this.add(panel);
+        this.add(textField);
+        this.add(button);
+       // this.add(panel);
 
         
         this.setVisible(true);
