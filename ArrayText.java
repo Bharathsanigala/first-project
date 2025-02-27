@@ -50,6 +50,9 @@ public class ArrayText  extends JFrame implements ActionListener{
             System.out.println("HELLO " + textField.getText());
         }
     }
+    public static void main(String[] args) {
+        ArrayText arrayText = new ArrayText();
+    }
    
 }
 
