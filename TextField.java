@@ -11,17 +11,10 @@ public class TextField implements ActionListener {
     JButton button;
     JPanel panel;
     JFrame frame;
-    String[] arr = {"hello","how are you","bye"};
-        JList<String> list  = new JList<>(arr);
-        int num = (int)(Math.random()*arr.length);
     Font myFont = new Font("Ink Free", Font.BOLD, 30);
 
     TextField (){
         
-        list.setForeground(Color.white);
-        list.setFont(myFont);
-        list.setVisible(true);
-
         frame = new JFrame("TEXT CHECKING.!");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,550);
@@ -54,9 +47,9 @@ public class TextField implements ActionListener {
         textField2.setForeground(Color.white);
         textField2.setFont(myFont);
         textField2.setEditable(false);
+        textField2.setHorizontalAlignment(textField2.CENTER);
 
         frame.add(textField2);
-        frame.add(list);
         frame.add(button);
         frame.add(textField1);
         frame.setVisible(true);
