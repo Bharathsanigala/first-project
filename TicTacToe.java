@@ -209,6 +209,9 @@ public class TicTacToe implements ActionListener {
         ){
             oWins(2, 4, 6);
         }
+        else{
+            textfield.setText("Game Over");
+        }
 
     }
     public void xWins(int a , int b, int c){
