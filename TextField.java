@@ -53,14 +53,14 @@ public class TextField implements ActionListener {
         
 
         textField1 = new JTextField();
-        textField1.setBounds(100, 430, 250, 50);
+        textField1.setBounds(600, 700, 250, 50);
         textField1.setBackground(Color.BLACK);
         textField1.setForeground(Color.white);
         textField1.setCaretColor(Color.white);
         textField1.setFont(myFont);
 
         button = new JButton("SUBMIT");
-        button.setBounds(350,430,200,50);
+        button.setBounds(850,700,200,50);
         button.setFocusable(false);
         button.setFont(myFont);
         button.addActionListener(this);
