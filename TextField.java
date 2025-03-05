@@ -66,7 +66,7 @@ public class TextField implements ActionListener {
         button.addActionListener(this);
 
         textField2 = new JTextField();
-        textField2.setBounds(0,0,320,350);
+        textField2.setBounds(0,0,800,350);
         textField2.setBackground(Color.BLACK);
         textField2.setForeground(Color.white);
         textField2.setFont(myFont);
@@ -80,8 +80,7 @@ public class TextField implements ActionListener {
         frame.add(button);
         frame.add(textField1);
         frame.setVisible(true);
-        frame.add(textField3);
-
+       
 
     }
     public void textfieldRunner(){
@@ -91,6 +90,8 @@ public class TextField implements ActionListener {
         textField3.setForeground(Color.white);
         textField3.setFont(myFont);
         textField3.setEditable(false);
+       
+
         
     }
     public static void main(String[] args) {
@@ -103,6 +104,10 @@ public class TextField implements ActionListener {
             String inputText = textField1.getText();  
             textField2.setText(inputText); 
             textField1.setText("");  
+            if (e.getSource()==button) {
+                frame.add(textField3);
+                textField2.setBounds(0,0,320,350);
+            }
 
             Random random = new Random();
            int randomIndex = random.nextInt(arr.length);
